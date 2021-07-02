@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(210,41%,94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abc{
+    width: 25rem;
+    height: 10rem;
+    text-decoration: none;
+}
+.abc  span{
+    position: absolute;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 2rem 4rem;
+    transition: all 0.3s linear;
+}
+.abc  span:first-child{
+    background: turquoise;
+    color: white;
+}
+.abc  span:last-child{
+    background: white;
+    color: turquoise;
+    clip-path: polygon(77% 0, 100% 0, 100% 100%, 34% 100%);
+}
+.abc  span:last-child:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.abc span:first-child:hover ~ span{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.me{
+    width: 25rem;
+    height: 10rem;
+    text-decoration: none;
+} 
+.me span{
+    font-size: 4rem;
+    padding: 2rem 7.5rem;
+    position: absolute;
+    transition: all 0.3s linear;
+}
+.me span:first-child{
+    background: crimson;
+    color: white;
+}
+.me span:last-child{
+    background: white;
+    color: crimson;
+    clip-path: polygon(0 0, 39% 0, 72% 100%, 0% 100%);
+}
+.me span:last-child:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.me span:first-child:hover~span{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+p{
+    font-size: 8rem;
+   color: #8e7a86;
+    
+}
+h1{
+    width: 30rem;
+    height: auto;
+    padding: 2rem 4rem;
+    background: lightskyblue;
+    text-transform: uppercase;
+}
